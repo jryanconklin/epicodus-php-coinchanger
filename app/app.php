@@ -15,16 +15,7 @@
     $app->get('/loosechange', function() use ($app) {
         $newCoins = new CoinCombo();
         $pennies = $newCoins->makeChange($_GET["change"]);
-        // $pennies = floatval($pennies);
-        // $quarters = $newCoins->makeQuarters($pennies);
-        // $dimes = $newCoins->makeDimes($quarters[1]);
-        // $nickels = $newCoins->makeNickels($dimes[1]);
-        // $pennies = $newCoins->makePennies($pennies[1]);
-
-
-
-        return var_dump($pennies);
-        //return $app['twig']->render('results.html.twig');
+        return $app['twig']->render('results.html.twig', array('results'=>$pennies));
     });
 
     return $app;
