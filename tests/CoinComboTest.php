@@ -1,14 +1,14 @@
 <?php
-    require_once "src/Blank.php";
-    class blankTests extends PHPUnit_Framework_TestCase
+    require_once "src/CoinCombo.php";
+    class coinComboTests extends PHPUnit_Framework_TestCase
     {
-        function test()
+        function test_makePennies_float04()
         {
-            $test = new Test;
-            $input = "";
-            $output = $test->testFunction($input);
-            $this->assertEquals("", $output);
+            $coin_test = new CoinCombo;
+            $input = .04;
+            $output = $coin_test->makePennies($input);
+            $this->assertEquals(4, $output);
         }
 
     }
-?>  
+?>
