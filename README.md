@@ -2,7 +2,7 @@
 
 #### _Another exercise in PHP BDD and Testing_
 
-#### By _**A Couple of Helpless Epicodus Students**_
+#### By _**J. Ryan Conklin**_
 
 ## Description
 
